@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'components/hint_label.dart';
 
 void main() => runApp(const Counter());
 
@@ -46,25 +47,27 @@ class Counter extends StatelessWidget {
   }
 }
 
-class HintLabel extends StatelessWidget {
-  final String hintText;
+// class HintLabel extends StatelessWidget {
+//   final String hintText;
 
-  const HintLabel(this.hintText, {super.key});
+//   const HintLabel(this.hintText, {super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return DecoratedBox(
-      decoration: BoxDecoration(color: Colors.amberAccent[500]),
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Text(hintText,
-            style: TextStyle(
-              color: Colors.blueGrey[800],
-            )),
-      ),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return DecoratedBox(
+//       decoration: BoxDecoration(color: Colors.amberAccent[500]),
+//       child: Padding(
+//         padding: const EdgeInsets.all(8.0),
+//         child: Text(hintText,
+//             style: TextStyle(
+//               color: Colors.blueGrey[800],
+//             )),
+//       ),
+//     );
+//   }
+// }
+
+
 
 // class _SunflowerState extends State<Sunflower> {
 //   int seeds = maxSeeds ~/ 2;
